@@ -56,4 +56,4 @@ Then pick a direction and say **“stage 1”**, **“next”**, and so on.
 - `preview/` – example images from the maptechgh.com redesign
 
 ---
-Made by **MAPTECH GLOBAL** · Want your site redesigned for you instead? Visit [maptechgh.com](https://www.maptechgh.com).
+Made by **M-AVETECH IT SERVICES** · Want your site redesigned for you instead? Visit [mavetechservices.com](https://www.mavetechservices.com).
