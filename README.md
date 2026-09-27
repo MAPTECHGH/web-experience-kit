@@ -1,4 +1,4 @@
-# Web Experience Kit — Site Redesign skill for Claude
+# Web Experience Kit — Claude skills for building better websites
 
 A Claude skill that gives an old, plain website a full modern makeover — **safely**.
 Built for Ghana data-bundle reseller sites (custom PHP MVC), but works for similar PHP sites.
@@ -11,7 +11,26 @@ It was made while redesigning **[maptechgh.com](https://www.maptechgh.com)** ("M
   <img src="preview/04-buy-data.jpg" width="32%" alt="Buy data screen">
 </p>
 
-## What it does
+## All skills in this kit
+
+| Skill | What it does | Download |
+|---|---|---|
+| **site-redesign-5-variants** | Redesigns an existing site safely — shows 5 design directions first, then applies your pick in stages. | [zip](site-redesign-5-variants.zip) |
+| **ui-ux-pro-max** | Design brain for apps & sites: picks the right style, colours, font pairing, spacing and layout for your product type, builds it, and checks it on phone + desktop. | [zip](ui-ux-pro-max.zip) |
+| **bug-hunt-review** | Strict code reviewer: walks through a diff/PR/folder, hunts real bugs & security holes (SQL injection, double refunds, race conditions…), proves them, and gives a fix for each with a ship/don't-ship verdict. | [zip](bug-hunt-review.zip) |
+| **component-lab** | Builds polished copy-paste UI components & sections (hero, pricing, tables, modals, forms…) in React/Tailwind or plain HTML/CSS/PHP, with variants and a live preview. | [zip](component-lab.zip) |
+
+**Example prompts**
+- *ui-ux-pro-max:* "Use ui-ux-pro-max to design the dashboard for my data-bundle app."
+- *bug-hunt-review:* "Use bug-hunt-review on my latest changes before I upload them." / "Review this PR: <link>"
+- *component-lab:* "Use component-lab to make a pricing section for MTN, Telecel and AT bundles in plain HTML/CSS."
+
+Install any of them the same way as below — just pick that skill's zip or folder.
+
+> These skills are original, independent work by MAPTECH GLOBAL. They are not affiliated with or
+> endorsed by any other tool or company.
+
+## site-redesign-5-variants — what it does
 
 1. **Looks around first** – maps your pages, layouts, CSS, fonts and icons. Changes nothing.
 2. **Shows you 5 different design directions** in one preview page (dark premium, clean light,
@@ -40,6 +59,8 @@ It was made while redesigning **[maptechgh.com](https://www.maptechgh.com)** ("M
 git clone https://github.com/MAPTECHGH/web-experience-kit.git
 mkdir -p ~/.claude/skills
 cp -r web-experience-kit/site-redesign-5-variants ~/.claude/skills/
+# or all of them:
+cp -r web-experience-kit/{site-redesign-5-variants,ui-ux-pro-max,bug-hunt-review,component-lab} ~/.claude/skills/
 ```
 
 ## Use it
@@ -53,6 +74,7 @@ Then pick a direction and say **“stage 1”**, **“next”**, and so on.
 ## Files
 - `site-redesign-5-variants/SKILL.md` – the skill itself (plain text, easy to read and edit)
 - `site-redesign-5-variants.zip` – same thing, zipped for uploading to Claude
+- `ui-ux-pro-max/`, `bug-hunt-review/`, `component-lab/` (+ their `.zip` files) – the other skills
 - `preview/` – example images from the maptechgh.com redesign
 
 ---
