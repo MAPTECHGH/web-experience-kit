@@ -27,7 +27,7 @@ It was made while redesigning **[maptechgh.com](https://www.maptechgh.com)** ("M
 
 Install any of them the same way as below — just pick that skill's zip or folder.
 
-> These skills are original, independent work by MAPTECH GLOBAL. They are not affiliated with or
+> These skills are original, independent work by M-AVETECH IT SERVICES. They are not affiliated with or
 > endorsed by any other tool or company.
 
 ## site-redesign-5-variants — what it does
