@@ -20,6 +20,7 @@ It was made while redesigning **[maptechgh.com](https://www.maptechgh.com)** ("M
 | **ui-ux-pro-max** | Design brain for apps & sites: picks the right style, colours, font pairing, spacing and layout for your product type, builds it, and checks it on phone + desktop. | [zip](ui-ux-pro-max.zip) |
 | **bug-hunt-review** | Strict code reviewer: walks through a diff/PR/folder, hunts real bugs & security holes (SQL injection, double refunds, race conditions…), proves them, and gives a fix for each with a ship/don't-ship verdict. | [zip](bug-hunt-review.zip) |
 | 🔒 **site-security-audit** | Security audit for your site's code: checks wallet top-ups, payment webhooks, buying, refunds, shop checkout, withdrawals, logins, admin rights and uploads. Shows a plain-English report first, **waits for your go-ahead**, then fixes everything in a separate `_security_fixes` folder — each fix tested against fake payment gateways (attack works before, fails after, normal payments still work). | [zip](site-security-audit.zip) |
+| 🔌 **api-v2-upgrade** | Adds a modern **version 2 of your reseller API** next to the old one (old one keeps working): one reply format, request IDs, **never-charge-twice retry keys** (tested: 8 identical requests at once → 1 order, 1 charge), dry runs, your clients' own order references, per-order webhooks, bulk orders with per-line results, rate-limit headers, request logs and v2 docs. Shows the plan first, **waits for your go-ahead**, builds in a separate folder and tests it. | [zip](api-v2-upgrade.zip) |
 | **component-lab** | Builds polished copy-paste UI components & sections (hero, pricing, tables, modals, forms…) in React/Tailwind or plain HTML/CSS/PHP, with variants and a live preview. | [zip](component-lab.zip) |
 
 **Example prompts**
@@ -27,6 +28,7 @@ It was made while redesigning **[maptechgh.com](https://www.maptechgh.com)** ("M
 - *ui-ux-pro-max:* "Use ui-ux-pro-max to design the dashboard for my data-bundle app."
 - *bug-hunt-review:* "Use bug-hunt-review on my latest changes before I upload them." / "Review this PR: <link>"
 - *site-security-audit:* "Run site-security-audit on my site." → read the report → "fix them".
+- *api-v2-upgrade:* "Use api-v2-upgrade to create a version 2 of my site's API." → check the plan → "go ahead".
 - *component-lab:* "Use component-lab to make a pricing section for MTN, Telecel and AT bundles in plain HTML/CSS."
 
 Install any of them the same way as below — just pick that skill's zip or folder.
@@ -64,7 +66,7 @@ git clone https://github.com/MAPTECHGH/web-experience-kit.git
 mkdir -p ~/.claude/skills
 cp -r web-experience-kit/site-redesign-5-variants ~/.claude/skills/
 # or all of them:
-cp -r web-experience-kit/{web-experience-pro,site-redesign-5-variants,ui-ux-pro-max,bug-hunt-review,component-lab,site-security-audit} ~/.claude/skills/
+cp -r web-experience-kit/{web-experience-pro,site-redesign-5-variants,ui-ux-pro-max,bug-hunt-review,component-lab,site-security-audit,api-v2-upgrade} ~/.claude/skills/
 ```
 
 ## Use it
@@ -80,6 +82,7 @@ Then pick a direction and say **“stage 1”**, **“next”**, and so on.
 - `site-redesign-5-variants.zip` – same thing, zipped for uploading to Claude
 - `web-experience-pro/` (+ `.zip`) – the all-in-one skill
 - `site-security-audit/` (+ `.zip`) – the security audit + fix skill (checklist, fix patterns, fake payment gateways for testing)
+- `api-v2-upgrade/` (+ `.zip`) – the API v2 skill (contract, templates for the helper/base/orders controller, router + webhook changes, smoke test)
 - `ui-ux-pro-max/`, `bug-hunt-review/`, `component-lab/` (+ their `.zip` files) – the other skills
 - `preview/` – example images from the maptechgh.com redesign
 
